@@ -1,0 +1,12 @@
+# Instalation and instructions for use
+
+= Using Microdetector =
+
+Using microdetector is very simple. Simply place the microdetector package into your project's path, and then add:
+
+{{{microdetector.Middleware}}}
+
+to your `MIDDLEWARE_CLASSES` tuple in your settings.py
+
+Then in your view you can check `request.mobile` - if it's `True` then treat it like a small screen device. If it's `False` then it's probably a desktop browser, or a spider or something else.
+
